@@ -1,11 +1,11 @@
 set shortmess=atI   " 启动的时候不显示那个援助乌干达儿童的提示  
 "winpos 5 5          " 设定窗口位置  
-"set lines=40 columns=155    " 设定窗口大小  
-"set nu              " 显示行号  
+""set lines=100 columns=150" 设定窗口大小  
+set nu              " 显示行号  
 set go=             " 不要图形按钮  
 "color asmanian2     " 设置背景主题  
 set guifont=Courier_New:h10:cANSI   " 设置字体  
-"syntax on           " 语法高亮  
+syntax on           " 语法高亮  
 autocmd InsertLeave * se nocul  " 用浅色高亮当前行  
 autocmd InsertEnter * se cul    " 用浅色高亮当前行  
 "set ruler           " 显示标尺  
@@ -26,7 +26,7 @@ if version >= 603
     set encoding=utf-8
 endif
 " 设置配色方案
-"colorscheme murphy
+colorscheme murphy
 "字体 
 "if (has("gui_running")) 
 "   set guifont=Bitstream\ Vera\ Sans\ Mono\ 10 
@@ -216,7 +216,7 @@ set wildmenu
 " 使回格键（backspace）正常处理indent, eol, start等
 set backspace=2
 " 允许backspace和光标键跨越行边界
-set whichwrap+=<,>,h,l
+" set whichwrap+=<,>,h,l
 " 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
 set mouse=a
 set selection=exclusive
